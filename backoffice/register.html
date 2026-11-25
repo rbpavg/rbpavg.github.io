@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HOME</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="module" src="register.js"></script>
+    </head>
+    <body>
+    
+    
+        <header>
+            <h1>backoffice</h1>
+            <a href="./login.html">log in</a>
+        </header>
+        
+        <main id="register">
+            <h2 class="chunk">registro de usuario</h2>
+            <form id="register-form" class="chunk">
+                <label for="username">usuario:</label>
+                <input type="text" name="username" id="username">
+                <label for="itsonid">itson id:</label>
+                <input type="text" name="itsonid" id="itsonid" onkeypress="return /[0-9]/i.test(event.key)">
+                <label for="email">correo:</label>
+                <input type="email" name="email" id="email">
+                <label for="password">contraseña:</label>
+                <input type="password" name="password" id="password">
+                <button type="submit">register</button>
+            </form>
+        </main>
+        
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HOME</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="module" src="index.js"></script>
+    </head>
+    <body>
+    
+    
+        <header>
+            <h1>backoffice</h1>
+            <button id="logout-btn">log out</button>
+        </header>
+        
+        <main>
+            <div class="chunk" id="intro">                
+                <p>
+                    index home page.
+                </p>
+            </div>         
+            <h2 class="chunk">
+                create project
+            </h2>
+            <form id="create-project" class="chunk">
+                <label for="name">name:</label>
+                <input id="name" name="name" type="text" minlength="10" required>
+                
+                <label for="description">description:</label>
+                <input id="description" name="description" type="text" minlength="3" required>
+                
+                <label for="technologies">technologies:</label>
+                <textarea id="technologies" name="technologies" required></textarea>
+                
+                
+                <label for="repository">repository:</label>
+                <input id="repository" name="repository" type="text" minlength="10" required>
+                
+                <label for="image">image (url):</label>
+                <input id="image" name="image" type="text" minlength="10" required>
+                
+                <button type="submit">save</button>
+            </form>  
+                     
+            <h2 class="chunk">
+                projects
+            </h2>
+            <div id="my-projects">
+            </div>
+            
+        </main>
+        
+    </body>
+</html>
